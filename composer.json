@@ -1,0 +1,35 @@
+{
+    "name": "jeffersonpereira/blog",
+    "description": "Package to manager blog in apps laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jefferson Pereira",
+            "email": "jefferson.pereira.nascimento10@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "fakerphp/faker": "^1.13",
+        "laravel/legacy-factories": "^1.0@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jeffpereira\\Blog\\ServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+           "JPAddress\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JPAddress\\Tests\\": "tests/"
+        }
+    }
+}
