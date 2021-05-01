@@ -9,7 +9,10 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "php":" >=7.2.5",
+        "laravel/framework": "~6.0"
+    },
     "require-dev": {
         "orchestra/testbench": "^4.0",
         "fakerphp/faker": "^1.13",
@@ -24,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-           "JPAddress\\": "src/"
+           "Jeffpereira\\Blog\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "JPAddress\\Tests\\": "tests/"
+            "Jeffpereira\\Blog\\Tests\\": "tests/"
         }
     }
 }

@@ -1,0 +1,6 @@
+/vendor
+.env
+.phpunit.result.cache
+.dockerignore
+docker-compose.yml
+kool.yml
