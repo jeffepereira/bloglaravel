@@ -21,6 +21,7 @@ class CreateCommentsTable extends Migration
                 ->references('id')
                 ->on('posts')
                 ->onDelete('cascade');
+            $table->string("body", 500);
             $table->boolean('active')->default(false);
             $table->timestamps();
         });

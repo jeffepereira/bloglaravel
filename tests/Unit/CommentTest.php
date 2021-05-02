@@ -72,4 +72,28 @@ class CommentTest extends TestCase
 
         $this->assertInstanceOf(Admin::class, $comment->author);
     }
+
+
+    /**
+     *
+     * @test
+     */
+    public function test_data_comment()
+    {
+        $comment = factory(Comment::class)->create(['body' => "Test of body comment"]);
+
+        $this->assertEquals("Test of body comment", $comment->body);
+    }
+
+
+    /**
+     *
+     * @test
+     */
+    public function test_liked_in_comment()
+    {
+        $comment = factory(Comment::class)->create(['body' => "Test of body comment"]);
+
+        $this->assertEquals(0, $comment->likes);
+    }
 }
